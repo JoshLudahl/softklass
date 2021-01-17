@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Softklass - Imagine, perfect simplicity</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bulma Version 0.7.4-->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/styles/styles.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero is-info is-medium is-bold">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item brand-name" href="/">
+                S//K
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="tabs is-right">
+                  <ul>
+                    <li class="is-active"><a>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#why">Why</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                  <span class="navbar-item">
+                    <a
+                      class="button is-white is-outlined"
+                      href="mailto:josh.ludahl@gmail.com"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body topshelf">
+        <div class="container has-text-centered">
+          <h1 class="title title-bg">
+            Teamwork makes the dream work
+          </h1>
+          <h2 class="subtitle title-bg">
+            It might sound corny, but most successful companies rely on the collaborative efforts of their teams working together toward a common goal.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="box cta">
+      <p class="has-text-centered">
+        We evolve with intent, constantly adjusting to business needs.
+      </p>
+    </div>
+    <section id="about" class="section">
+        <div class="container has-text-centered">
+          <h1 class="title">Privacy Policy</h1>
+          <br><br>
+          <h2 class="subtitle">
+            CHILDREN
+          </h2>
+          <p>
+              Tokenator is not intended for children under 13 years of age. We advise childred under the age of 13 to not use this application.
+          </p>
+          <br><br>
+          <h2 class="subtitle">
+              DATA
+          </h2>
+          <p>We do not collect any data. The only data involved in this app is what you choose to save in terms of passwords. The passwords do not save to any other database than the local device database. The passwords are encrypted before saving to the database and requires the application to unlock the encrypted passwords.</p>
+        </div>
+      </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Softklass</strong>. Imagine, perfect simplicity.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='assets/javascript/js.js') }}"></script>
+  </body>
+</html>

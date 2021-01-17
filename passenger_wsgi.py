@@ -7,4 +7,8 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
+@app.route('/privacy-policy')
+def hello_world():
+    return render_template('privacy-policy.html')
+
 application = app
