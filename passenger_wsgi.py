@@ -1,7 +1,5 @@
 import json, os, requests
-from flask import Flask, make_response, redirect, render_template, request, session, url_for
-
-zipCodes = ZipCodeDatabase()
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
