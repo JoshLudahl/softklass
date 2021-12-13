@@ -74,6 +74,18 @@ li a:active {
     color: #9b59b6;
 }
 
+#progs {
+    color: #B983FF;
+}
+
+#progs ul li a {
+    color: #99FEFF;
+}
+
+#progs ul li a:hover {
+    color: #94B3FD;
+}
+
 #dev {
     color: #f1c40f;
 }
