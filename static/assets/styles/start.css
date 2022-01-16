@@ -134,6 +134,18 @@ li a:active {
     color: #d35400;
 }
 
+#search-engines {
+    color: #7C99AC;
+}
+
+#search-engines ul li a {
+    color: #EDF0F1;
+}
+
+#search-engines ul li a:hover {
+    color: #7C99AC;
+}
+
 #server {
     color: #0078D7;
 }
