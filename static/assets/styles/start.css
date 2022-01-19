@@ -158,6 +158,18 @@ li a:active {
     color: #0078D7;
 }
 
+#news {
+    color: #FFFDA2;
+}
+
+#news ul li a {
+    color: #EDF0F1;
+}
+
+#news ul li a:hover {
+    color: #FFFDA2;
+}
+
 @media (min-width: 544px) {
     .container {
         font-size: 15px;
