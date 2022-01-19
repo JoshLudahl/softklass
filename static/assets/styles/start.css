@@ -18,7 +18,7 @@
     width: 952px;
     padding: 25px;
     font-family: 'Gudea', sans-serif;
-    font-size: 13px;
+    font-size: 2rem;
     box-shadow: 0 0 30px rgba(255, 255, 255, .3);
 }
 
@@ -251,10 +251,16 @@ label {
     .flash {
         visibility: hidden;
     }
+    .container {
+        font-size: 2rem;
+    }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 700px) {
     .flash {
         visibility: hidden;
+    }
+    .container {
+        font-size: 2rem;
     }
 }
 
