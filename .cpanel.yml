@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ludafghe/softklass
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R . $DEPLOYPATH
