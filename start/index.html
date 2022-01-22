@@ -15,10 +15,7 @@
 </head>
 
 <body>
-<div id="search">
-    <label for="search-field"></label><input id="search-field" name="search-field" onkeydown="return search(event)"
-                                             type="text"/>
-</div>
+
 <div class="flash">Starters</div>
 <!-- Inspired from https://codepen.io/ohlaph/pen/mobRbP -->
 <section class="hero is-dark is-fullheight">
@@ -61,7 +58,7 @@
                             <a href="https://spotify.com" target="_blank">spotify</a>
                         </li>
                         <li>
-                            <a href="http://musicforprogramming.net/?one" target="_blank">programming music</a>
+                            <a href="http://musicforprogramming.net/?one" target="_blank">code music</a>
                         </li>
                         <li>
                             <a href="http://datassette.net/" target="_blank">datassette</a>
@@ -79,10 +76,10 @@
                         </li>
                         </li>
                         <li>
-                            <a href="https://github.com/joshludahl" target="_blank">my github</a>
+                            <a href="https://github.com/joshludahl" target="_blank">github</a>
                         </li>
                         <li>
-                            <a href="https://www.codepen.io/ohlaph/" target="_blank">my codepen.io</a>
+                            <a href="https://www.codepen.io/ohlaph/" target="_blank">my codepen</a>
                         </li>
                         <li><a href="//jsfiddle.net" target="_blank">jsfiddle</a></li>
                     </ul>
@@ -95,13 +92,13 @@
                                target="_blank">javascript</a>
                         </li>
                         <li>
-                            <a href="http://javascript.info/" target="_blank">javascript.info</a>
+                            <a href="http://javascript.info/" target="_blank">js.info</a>
                         </li>
                         <li>
                             <a href="https://devdocs.io/" target="_blank">dev docs</a>
                         </li>
                         <li>
-                            <a href="https://basarat.gitbooks.io/typescript/content/" target="_blank">basarat - ts</a>
+                            <a href="https://basarat.gitbooks.io/typescript/content/" target="_blank">basarat-ts</a>
                         </li>
                     </ul>
                 </div>
@@ -127,12 +124,12 @@
                         <li><a href="//svelte.dev" target="_blank">svelte</a></li>
                         <li><a href="//bulma.io" target="_blank">bulma</a></li>
                         <li>
-                            <a href="https://htmlreference.io/" target="_blank">htmlreference.io</a>
+                            <a href="https://htmlreference.io/" target="_blank">html-ref</a>
                         </li>
                         <li>
-                            <a href="https://cssreference.io/" target="_blank">cssreference.io</a>
+                            <a href="https://cssreference.io/" target="_blank">css-ref</a>
                         </li>
-                        <li><a href="https://colorhunt.co/" target="_blank">colorhunt pallet</a></li>
+                        <li><a href="https://colorhunt.co/" target="_blank">colorhunt</a></li>
                     </ul>
                 </div>
                 <div class="column is-3-desktop is-3-tablet is-6-mobile" id="server">
@@ -178,35 +175,5 @@
         </div>
     </div>
 </section>
-
-<script>
-
-    const url = 'https://ludahl-weather.herokuapp.com/'
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => console.log(data));
-
-    // Search on enter key event
-    function search(e) {
-        if (e.code === 13) {
-            const val = document.getElementById("search-field").value;
-            window.open("https://www.qwant.com/?q=" + val);
-        }
-    }
-
-    document.addEventListener("keydown", event => {
-        if (event.code === '16') {
-            // shift to open search
-            document.getElementById("search").style.display = "flex";
-            document.getElementById("search-field").focus();
-        } else if (event.code === '27') {
-            // Esc to close search
-            document.getElementById("search-field").value = "";
-            document.getElementById("search-field").blur();
-            document.getElementById("search").style.display = "none";
-        }
-    });
-</script>
 </body>
 </html>
