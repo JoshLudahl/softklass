@@ -50,6 +50,18 @@ li a:active {
     color: #2ecc71;
 }
 
+#palettes {
+    color: #78e08f;
+}
+
+#palettes ul li a {
+    color: #EDF0F1;
+}
+
+#palettes ul li a:hover {
+    color: #78e08f;
+}
+
 #social {
     color: #3498db;
 }
