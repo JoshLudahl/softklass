@@ -179,7 +179,7 @@ li a:active {
 }
 
 #news ul li a:hover {
-    color: #FFFDA2;
+    color: #d1b1cb;
 }
 
 @media (min-width: 544px) {
