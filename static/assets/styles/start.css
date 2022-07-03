@@ -182,6 +182,19 @@ li a:active {
     color: #d1b1cb;
 }
 
+
+#work {
+    color: #FF9F29;
+}
+
+#work ul li a {
+    color: #EDF0F1;
+}
+
+#work ul li a:hover {
+    color: #FF9F29;
+}
+
 @media (min-width: 544px) {
     .container {
         font-size: 15px;
