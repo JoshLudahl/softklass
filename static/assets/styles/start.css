@@ -219,6 +219,18 @@ li a:active {
     color: #D18CE0;
 }
 
+#finance {
+    color: #C1EFFF;
+}
+
+#finance ul li a {
+    color: #EDF0F1;
+}
+
+#finance ul li a:hover {
+    color: #C1EFFF;
+}
+
 @media (min-width: 544px) {
     .container {
         font-size: 15px;
