@@ -207,6 +207,18 @@ li a:active {
     color: #F5F0BB;
 }
 
+#streaming {
+    color: #D18CE0;
+}
+
+#streaming ul li a {
+    color: #EDF0F1;
+}
+
+#streaming ul li a:hover {
+    color: #D18CE0;
+}
+
 @media (min-width: 544px) {
     .container {
         font-size: 15px;
