@@ -231,6 +231,18 @@ li a:active {
     color: #C1EFFF;
 }
 
+#ludahl {
+    color: #F06292;
+}
+
+#ludahl ul li a {
+    color: #EDF0F1;
+}
+
+#ludahl ul li a:hover {
+    color: #F06292;
+}
+
 @media (min-width: 544px) {
     .container {
         font-size: 15px;
