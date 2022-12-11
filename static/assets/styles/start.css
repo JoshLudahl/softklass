@@ -47,7 +47,7 @@ li a:active {
 }
 
 #architecture {
-    color: #F8F988;
+    color: #00E7FF;
 }
 
 #architecture ul li a {
@@ -55,7 +55,7 @@ li a:active {
 }
 
 #architecture ul li a:hover {
-    color: #F8F988;
+    color: #00E7FF;
 }
 
 #organize ul li a:hover {
