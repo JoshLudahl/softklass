@@ -41,7 +41,9 @@ body {
     background-color: #303841;
 }
 
-.card-image>.fa {
+.card-image>.fa,
+.card-image>.fab,
+.card-image>.fas {
     font-size: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -180,7 +182,42 @@ color: #FFFFFF;
   padding-bottom: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+/* Consultancy Hero Section Styles */
+#consultancy-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#consultancy-hero .hero-icon i {
+    transition: transform 0.3s ease;
+}
+
+#consultancy-hero .hero-icon i:hover {
+    transform: scale(1.1);
+}
+
+#consultancy-hero .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#consultancy-hero .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+#consultancy-hero .card-image i {
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#consultancy-hero .cta-button .button:hover {
+    background-color: #f9a94a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(234, 146, 21, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
     .topshelf {
         background-position-y: 0px;
         opacity: .9;
@@ -188,5 +225,33 @@ color: #FFFFFF;
     .icons-list li {
         font-size: 3rem;
         padding: 8px;
-      }
-  }
+    }
+
+    /* Responsive styles for consultancy hero section */
+    #consultancy-hero .columns.is-centered {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #consultancy-hero .column.is-5 {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    #consultancy-hero .card {
+        margin-bottom: 1.5rem;
+    }
+
+    #consultancy-hero .title.is-2 {
+        font-size: 1.75rem;
+    }
+
+    #consultancy-hero .subtitle.is-4 {
+        font-size: 1.25rem;
+    }
+
+    #consultancy-hero .cta-button .button {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
