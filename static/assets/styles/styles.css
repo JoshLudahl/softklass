@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Teko|Zilla+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html,
 body {
-    background: #EFF3F4;
-    font-family: 'Open Sans', serif;
+    background: #EEEEEE;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
     scroll-behavior: smooth; 
 }
 
@@ -12,11 +14,11 @@ body {
 }
 
 .hero-body .title {
-    color: hsl(192, 17%, 99%) !important;
+    color: #EA9215 !important;
 }
 
 .hero-body .subtitle {
-    color: hsl(192, 17%, 99%) !important;
+    color: #EA9215 !important;
     padding-top: 2rem;
     line-height: 1.5;
 }
@@ -29,13 +31,21 @@ body {
     border-radius: 0;
     border-left: none;
     border-right: none;
+    background-color: #EEEEEE;
+    color: #303841;
+    font-size: 2rem;
+}
+
+.button {
+    color: #EA9215;
+    background-color: #303841;
 }
 
 .card-image>.fa {
     font-size: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #209cee;
+    color: #303841;
 }
 
 .card-content .content {
@@ -46,6 +56,10 @@ body {
 .card-content .content h4 {
     font-size: 16px;
     font-weight: 700;
+    color: #303841;
+}
+.card-content p {
+    color: #3A4750;
 }
 
 .card {
@@ -53,13 +67,44 @@ body {
     margin-bottom: 2rem;
 }
 
+.em {
+    color: white;
+}
+
 .intro {
     padding: 5rem 0;
     text-align: center;
 }
 
+.fap {
+    color: #303841;
+}
+h4 {
+    color: #303841;
+}
+
+.hero-head {
+    background-color: #3A4750;
+}
+
+.hero-head a {
+    color: #EA9215;
+}
+
+.hero-head a:hover {
+    color: #EEEEEE;
+}
+
 .sandbox {
     padding: 5rem 0;
+}
+
+.section {
+    background-color: #3A4750;
+}
+
+.title {
+    color: white;
 }
 
 .tile.notification {
@@ -79,6 +124,14 @@ body {
     transition: all .2s ease-in-out;
 }
 
+.tabs li.is-active a {
+    color: #EEEEEE;
+}
+
+.is-dark {
+    color: #303841;
+}
+
 .is-shady:hover {
     box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
 }
@@ -95,7 +148,7 @@ body {
 }
 
 .title-bg {
-    background-color: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, .60);
 }
 
 .brand-name a {
@@ -126,6 +179,7 @@ color: #FFFFFF;
 .gap-bottom {
   padding-bottom: 100px;
 }
+
 @media only screen and (max-width: 600px) {
     .topshelf {
         background-position-y: 0px;
