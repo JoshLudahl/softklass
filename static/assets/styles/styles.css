@@ -1,24 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --primary: #EA9215;
+    --secondary: #303841;
+    --dark: #2B2C3E;
+    --light: #EEEEEE;
+    --slate: #3A4750;
+    --white: #FFFFFF;
+    --accent: #FFB347;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
 html,
 body {
-    background: #EEEEEE;
+    background: var(--light);
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     scroll-behavior: smooth; 
 }
 
 .hero-body .container {
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .hero-body .title {
-    color: #EA9215 !important;
+    color: var(--white) !important;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
 .hero-body .subtitle {
-    color: #EA9215 !important;
+    color: var(--light) !important;
     padding-top: 2rem;
     line-height: 1.5;
 }
@@ -37,36 +51,58 @@ body {
 }
 
 .button {
-    color: #EA9215;
-    background-color: #303841;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(234, 146, 21, 0.3);
+    color: var(--white);
 }
 
 .card-image>.fa,
 .card-image>.fab,
 .card-image>.fas {
-    font-size: 6rem;
+    font-size: 3.5rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: #303841;
+    padding-bottom: 1rem;
+    color: var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image i {
+    transform: scale(1.1);
 }
 
 .card-content .content {
-    font-size: 14px;
+    font-size: 0.95rem;
     margin: 1rem 1rem;
 }
 
 .card-content .content h4 {
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #303841;
+    color: var(--secondary);
 }
 .card-content p {
-    color: #3A4750;
+    color: var(--slate);
 }
 
 .card {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
 }
 
 .em {
@@ -86,15 +122,27 @@ h4 {
 }
 
 .hero-head {
-    background-color: #3A4750;
+    background-color: transparent;
 }
 
-.hero-head a {
-    color: #EA9215;
+.navbar-item.brand-name {
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: var(--white) !important;
 }
 
-.hero-head a:hover {
-    color: #EEEEEE;
+.navbar-end .tabs a {
+    color: var(--light) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-end .tabs a:hover {
+    color: var(--primary) !important;
+}
+
+.tabs li.is-active a {
+    color: var(--primary) !important;
 }
 
 .sandbox {
@@ -102,11 +150,34 @@ h4 {
 }
 
 .section {
-    background-color: #3A4750;
+    background-color: var(--white);
+    padding: 6rem 1.5rem;
+}
+
+.section.is-primary-bg {
+    background-color: var(--primary) !important;
+}
+
+.section.is-dark-bg {
+    background-color: var(--secondary) !important;
 }
 
 .title {
-    color: white;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--slate);
+}
+
+.title.is-1 {
+    font-size: 3.5rem;
+}
+
+.section .title {
+    color: var(--secondary);
+    margin-bottom: 3rem;
 }
 
 .tile.notification {
@@ -143,14 +214,16 @@ h4 {
 
 
 .topshelf {
-    background-image: url('https://images.unsplash.com/photo-1527586111811-0210b19af05b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background: linear-gradient(rgba(43, 44, 62, 0.7), rgba(43, 44, 62, 0.7)), url('https://images.unsplash.com/photo-1527586111811-0210b19af05b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
-    background-position-y: -7rem;
-    opacity: .9;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .title-bg {
-    background-color: rgba(0, 0, 0, .60);
+    background-color: transparent;
 }
 
 .brand-name a {
@@ -215,6 +288,17 @@ color: #FFFFFF;
     background-color: #f9a94a !important;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(234, 146, 21, 0.4);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media only screen and (max-width: 768px) {
