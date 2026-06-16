@@ -22,6 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('is-scrolled');
+        } else {
+            navbar.classList.remove('is-scrolled');
+        }
+    });
+
     // Reveal sections on scroll
     const reveals = document.querySelectorAll('.reveal');
 
@@ -29,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < reveals.length; i++) {
             const windowHeight = window.innerHeight;
             const elementTop = reveals[i].getBoundingClientRect().top;
-            const elementVisible = 150;
+            const elementVisible = 100;
 
             if (elementTop < windowHeight - elementVisible) {
                 reveals[i].classList.add('active');
