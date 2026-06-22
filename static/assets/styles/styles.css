@@ -6,6 +6,7 @@
     --secondary: #303841;
     --dark: #0F172A;
     --dark-surface: #1E293B;
+    --dark-bg: #111827;
     --light: #F8FAFC;
     --slate: #64748B;
     --white: #FFFFFF;
@@ -62,6 +63,7 @@ h1, h2, h3, .brand-name {
     padding: 3rem 1.5rem;
     font-weight: 300;
     letter-spacing: 1px;
+    margin-bottom: 0 !important;
 }
 
 .box.cta p {
@@ -442,6 +444,16 @@ color: #FFFFFF;
     background-color: #f9a94a !important;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(234, 146, 21, 0.4);
+}
+
+.shadow-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: rgba(234, 146, 21, 0.1);
+    border-radius: 50%;
 }
 
 .reveal {
